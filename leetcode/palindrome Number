@@ -1,0 +1,29 @@
+#link: https://leetcode.com/problems/palindrome-number/
+
+#solve code:
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0:
+            return False
+        
+        original, reversed = x, 0
+        while x != 0:
+            reversed = reversed * 10 + x % 10
+            x //= 10
+        
+        return original == reversed
+      
+
+
+# বাংলা ব্যাখ্যা:
+# নেগেটিভ সংখ্যা চেক করা:
+# নেগেটিভ সংখ্যা কখনোই প্যালিনড্রোম হতে পারে না, কারণ - সাইন থাকে। সুতরাং, প্রথমেই x < 0 হলে False রিটার্ন করা হয়।
+
+# সংখ্যা উল্টানো (Reverse করা):
+
+# সংখ্যার শেষ অঙ্ক বের করতে x % 10 ব্যবহার করা হয়।
+# reversed_num-এর প্রতিটি ডিজিটকে বাম দিকে শিফট করে নতুন ডিজিট যোগ করা হয়।
+# x থেকে শেষ অঙ্ক বাদ দিতে x //= 10 করা হয়।
+# তুলনা করা:
+# শেষে, উল্টানো সংখ্যা (reversed_num) এবং আসল সংখ্যা (original) তুলনা করা হয়। সমান হলে এটি একটি প্যালিনড্রোম।
