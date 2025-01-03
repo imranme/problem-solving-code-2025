@@ -1,0 +1,9 @@
+# link:https://leetcode.com/problems/remove-element/description/?envType=problem-list-v2&envId=array 
+
+#code:
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        while val in nums:
+            nums.remove(val)
+        
