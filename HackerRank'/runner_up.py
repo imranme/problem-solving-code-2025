@@ -4,3 +4,6 @@ if __name__ == '__main__':
         sArr = sorted(arr)          #sort it first
         newL = list(set(sArr))     #then remove the duplicates
         print(newL[-2])              #then print the second one
+
+
+link # https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/forum
