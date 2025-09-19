@@ -10,3 +10,4 @@ if lucky:
     print(" ".join(lucky))
 else:
     print("-1")
+  
