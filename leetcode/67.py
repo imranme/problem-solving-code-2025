@@ -5,5 +5,4 @@ class Solution:
         e = c+d
         return bin(e)[2:]
     
-    
-        
+# https://leetcode.com/problems/add-binary/description/
